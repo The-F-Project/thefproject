@@ -3,38 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The F Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Главная страница | Название организации</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        .header {
+            background-color: #0071e3;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .app-info {
+            max-width: 600px;
+        }
+
+        .app-info h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .app-info p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            background-color: #0071e3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #005bb5;
+        }
+
+        .app-image img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0071e3;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Здравствуйте</h1>
-        <p>Добро пожаловать на наш сайт</p>
-    </header>
+    <!-- Шапка -->
+    <div class="header">
+        <h1>Название организации</h1>
+    </div>
 
-    <main>
-        <section class="posts">
-            <div class="post">
-            <img src="https://github.com/The-F-Project/thefproject/blob/main/3D_books_icon_for_educational_app_with_thematic_dimensions-removebg-preview.png" alt="logoeduca">
-                <h2>EduCA</h2>
-                <p>Цель EduCA это облегчить быт школьника, ускорить доступ к пособиям и решенным заданиям</p>
-                <a href="https://github.com/The-F-Project/EduCA/releases/download/v1.13/EduCA-v1.13.apk" class="button">Скачать</a>
-            </div>
-            <div class="post">
-                <h2></h2>
-                <p></p>
-            </div>
-            <div class="post">
-                <h2></h2>
-                <p></p>
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; The F Project</p>
-    </footer>
+    <div class="container">
 
-    <script src="script.js"></script>
+        <div class="app-section">
+            <div class="app-info">
+                <h2>Наше приложение</h2>
+                <p>
+                    Наше приложение помогает вам делать что-то полезное и интересное. 
+                    Скачайте его прямо сейчас и начните использовать все возможности!
+                </p>
+                <button class="download-button">Скачать приложение</button>
+            </div>
+            <div class="app-image">
+                <img src="app-preview.png" alt="Превью приложения">
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>О нас</h2>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 The F Project. Некоторые права защищены.</p>
+    </div>
 </body>
 </html>
